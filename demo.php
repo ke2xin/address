@@ -2,9 +2,10 @@
 require 'address.php';
 
 // 解析包含用户信息的字符串
-$string = '深圳市龙华区龙华街道1980科技文化产业园3栋317    张三    13800138000 518000 120113196808214821';
+#$string = '深圳市龙华区龙华街道1980科技文化产业园3栋317    张三    13800138000 518000 120113196808214821';
+$string='深圳市龙华区观澜樟坑径上围社区金倡达科技园i栋6楼，18503039400 袁嘉伟';
 $r = Address::smart($string);
-print_r($r);
+#print_r($r);
 
 // 解析不包含用户信息的字符串
 $string = '吉林省长春市朝阳区开运街领秀朝阳小区333弄8号502';
@@ -33,7 +34,7 @@ $test = array(
     '清远市清城区石角镇美林湖大东路口佰仹公司 郑万顺 15345785872',
 );
 
-foreach ($test as $key => $v) {
-    $r = Address::smart($v, $user = false);
-    print_r($r);
-}
+//foreach ($test as $key => $v) {
+//    $r = Address::smart($v, $user = false);
+//    print_r($r);
+//}
